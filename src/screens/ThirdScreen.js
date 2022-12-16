@@ -1,13 +1,4 @@
-import {
-  ActivityIndicator,
-  Alert,
-  Dimensions,
-  FlatList,
-  Linking,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {FlatList, StyleSheet, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import LoadingComponent from '../components/LoadingComponent';

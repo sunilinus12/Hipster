@@ -1,13 +1,4 @@
-import {
-  ActivityIndicator,
-  Alert,
-  Dimensions,
-  FlatList,
-  Linking,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import LoadingComponent from '../components/LoadingComponent';
@@ -32,7 +23,7 @@ export default function SecondScreen() {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <FlatList
         data={data}
         showsVerticalScrollIndicator={false}
@@ -41,7 +32,7 @@ export default function SecondScreen() {
           return <CardItem screen={'third'} item={item} />;
         }}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
