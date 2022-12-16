@@ -25,7 +25,9 @@ export default function CardItem({item, screen}) {
     <TouchableOpacity
       activeOpacity={0.6}
       onPress={() => {
-        navigation.navigate(screen);
+        if (screen != '') {
+          navigation.navigate(screen);
+        }
       }}
       style={[
         styles.container,

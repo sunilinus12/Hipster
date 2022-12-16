@@ -29,7 +29,7 @@ export default function FourthScreen() {
         showsVerticalScrollIndicator={false}
         keyExtractor={(item, index) => index.toString()}
         renderItem={({item}) => {
-          return <CardItem screen={'third'} item={item} />;
+          return <CardItem screen={''} item={item} />;
         }}
       />
     </SafeAreaView>
